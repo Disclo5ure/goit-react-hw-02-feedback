@@ -13,3 +13,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.everything-container {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
