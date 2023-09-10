@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Disclo5ure/goit-react-hw-02-feedback/static/css/main.c5bfde72.css",
+    "main.js": "/Disclo5ure/goit-react-hw-02-feedback/static/js/main.7d0ca61c.js",
+    "index.html": "/Disclo5ure/goit-react-hw-02-feedback/index.html",
+    "main.c5bfde72.css.map": "/Disclo5ure/goit-react-hw-02-feedback/static/css/main.c5bfde72.css.map",
+    "main.7d0ca61c.js.map": "/Disclo5ure/goit-react-hw-02-feedback/static/js/main.7d0ca61c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5bfde72.css",
+    "static/js/main.7d0ca61c.js"
+  ]
+}
