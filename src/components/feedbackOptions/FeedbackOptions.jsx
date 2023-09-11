@@ -1,4 +1,5 @@
 import { ReviewButton } from './reviewButton/ReviewButton';
+import PropTypes from 'prop-types';
 
 export const FeedbackOptions = props => (
   <div className="button-container">
@@ -15,3 +16,12 @@ export const FeedbackOptions = props => (
     </ReviewButton>
   </div>
 );
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.shape({
+    good: PropTypes.string,
+    neutral: PropTypes.string,
+    bad: PropTypes.string,
+  }),
+  onLeaveFeedback: PropTypes.func,
+};

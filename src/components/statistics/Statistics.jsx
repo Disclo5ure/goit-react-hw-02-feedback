@@ -1,4 +1,5 @@
 import { PropertyDisplay } from './propertyDisplay/PropertyDisplay';
+import PropTypes from 'prop-types';
 
 export const Statistics = props => (
   <section className="statistics-container">
@@ -12,3 +13,11 @@ export const Statistics = props => (
     />
   </section>
 );
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.string,
+};
