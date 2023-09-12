@@ -9,4 +9,5 @@ export const Section = props => (
 
 Section.propTypes = {
   title: PropTypes.string,
+  children: PropTypes.node,
 };
