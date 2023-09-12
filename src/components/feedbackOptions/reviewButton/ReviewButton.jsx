@@ -9,4 +9,5 @@ export const ReviewButton = props => (
 
 ReviewButton.propTypes = {
   handleClick: PropTypes.func,
+  children: PropTypes.string,
 };
