@@ -3,25 +3,22 @@ import PropTypes from 'prop-types';
 
 export const FeedbackOptions = props => (
   <div className="button-container">
-    <ReviewButton handleClick={() => props.onLeaveFeedback(props.options.good)}>
-      {props.options.good}
-    </ReviewButton>
-    <ReviewButton
-      handleClick={() => props.onLeaveFeedback(props.options.neutral)}
-    >
-      {props.options.neutral}
-    </ReviewButton>
-    <ReviewButton handleClick={() => props.onLeaveFeedback(props.options.bad)}>
-      {props.options.bad}
-    </ReviewButton>
+    {Object.keys(props.options).map(option => (
+      <ReviewButton
+        key={option}
+        handleClick={() => props.onLeaveFeedback(option)}
+      >
+        {option}
+      </ReviewButton>
+    ))}
   </div>
 );
 
 FeedbackOptions.propTypes = {
   options: PropTypes.shape({
-    good: PropTypes.string,
-    neutral: PropTypes.string,
-    bad: PropTypes.string,
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
   }),
   onLeaveFeedback: PropTypes.func,
 };

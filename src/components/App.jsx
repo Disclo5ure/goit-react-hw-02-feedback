@@ -6,8 +6,8 @@ import { Statistics } from './statistics/Statistics';
 export class App extends React.Component {
   state = {
     good: 0,
-    bad: 0,
     neutral: 0,
+    bad: 0,
   };
 
   handleClick = type => {
@@ -27,7 +27,7 @@ export class App extends React.Component {
       <div className="everything-container">
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={{ good: 'good', neutral: 'neutral', bad: 'bad' }}
+            options={this.state}
             onLeaveFeedback={this.handleClick}
           />
         </Section>
